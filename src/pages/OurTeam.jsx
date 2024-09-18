@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/Team.css";
 import { get } from "../services/API";
 import Navbar from "../components/Navbar.jsx"
+
 function OurTeam() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -16,7 +17,7 @@ function OurTeam() {
   }, []);
 
   return (
-    <div id="ourTeam">
+    <div id="ourTeam" >
       <Navbar />
       <h1>
         {" "}
